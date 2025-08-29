@@ -1,0 +1,35 @@
+<!--giu trang thai-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.nt {
+  width: 100px;
+  height: 100px;
+  background: rgb(199, 141, 26);
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: backwards;
+}
+.nt1 {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  background: rgb(199, 141, 26);
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px; background-color: rgb(0, 255, 183);}
+}
+</style>
+</head>
+<body>
+
+<div class="nt"></div>
+<div class="nt1"></div>
+
+</body>
+</html>

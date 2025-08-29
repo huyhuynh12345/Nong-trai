@@ -1,0 +1,40 @@
+
+<!--tao hieu ung-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.box{
+  position: relative;
+  animation: nongtrai 3s infinite;
+  border-radius: 50%;
+}
+.box1{
+  width: 70px;
+  height: 70px;
+  background-color: aqua;
+}
+.box2{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(197, 255, 127);
+  animation-delay: 1s;
+}
+
+@keyframes nongtrai{
+  0%   { transform: translateY(0); }
+  25%   { transform: translateX(200px); }
+  50%  { transform: translateY(200px); }
+  75%   { transform: translateX(0); }
+  100% { transform: translateY(0); }
+
+}
+</style>
+</head>
+<body>
+
+<h1>ATST</h1>
+<div class="box box1"></div>
+<div class="box box2"></div>
+</body>
+</html>

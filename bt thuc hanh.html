@@ -1,0 +1,61 @@
+<!--ạo một hình tròn (quả bóng) có màu sắc bạn thích
+
+Viết animation để quả bóng nảy lên và xuống liên tục
+
+Sử dụng @keyframes để di chuyển quả bóng theo trục Y
+
+Thêm hiệu ứng thay đổi kích thước (nhỏ lại khi chạm đất, to lên khi lên cao)
+
+Cho animation chạy vô hạn (infinite)-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  width: 400px;
+  margin: 50px ;
+  display: flex;
+  justify-content:center;
+  height: 250px;
+ }
+.nt{
+     height: 100px;
+    width: 100px;
+    background-color: rgb(255, 127, 238);
+    border-radius: 50%;
+    position: relative;
+    animation: nongtrai 5s infinite;
+    
+}
+.nt1{
+    left:500px;
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: relative;
+    animation: nongtrai 5s infinite;
+    
+}
+@keyframes nongtrai{
+  0%,100%{
+    top:200px;
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+  50%{
+    top:0px;
+    transform: scaleX(1) scaleY(1);
+  }
+  
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="nt"></div>
+    <div class="nt1"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!--cach chay( tu dau den cuoi)-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@keyframes nongtrai{
+   0% { background-color: rgb(34, 136, 224);top:0;left: 0;}
+   25%{background-color: aqua;top:0px;left:200px}
+   50%{background-color: rgb(236, 31, 174);top:200px;left:200px}
+   75%{background-color: rgb(220, 142, 32);top:200px;left:0px}
+   100%{background-color: rgb(55, 223, 25);top:0px;left:0px}
+}
+
+.nt{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: nongtrai;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.nt1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: nongtrai;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Nong Trai Vui Ve</h1>
+
+<div class="nt"></div>
+<div class="nt1"></div>
+
+</body>
+</html>
